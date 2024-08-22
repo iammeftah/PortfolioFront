@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://itserror808.github.io/PortfolioFront",
+  "homepage": "https://itserror808.github.io/PortfolioFront/",
   "dependencies": {
     "@react-three/fiber": "^8.17.1",
     "@splinetool/react-spline": "^4.0.0",
