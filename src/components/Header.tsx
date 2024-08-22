@@ -1,14 +1,11 @@
 import React, { useState, useEffect } from 'react';
 
-import { FiMenu, FiX, FiDownload } from 'react-icons/fi';
 import { FiHome, FiInfo, FiFolder, FiMail } from 'react-icons/fi';
 import { BottomNav } from "./ui/BottomNav";
 
 const Header: React.FC = () => {
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
 
-    const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
     useEffect(() => {
         const handleScroll = () => {

@@ -102,18 +102,6 @@ const Projects: React.FC = () => {
     );
 };
 
-const ProjectCard: React.FC<{ title: string; description: string; tech: string[] }> = ({title, description, tech}) => (
-    <div className="border border-lavender-300 p-6 rounded-lg">
-        <h3 className="text-xl font-semibold mb-2 text-purple-100">{title}</h3>
-        <p className="mb-4">{description}</p>
-        <div className="flex flex-wrap gap-2">
-            {tech.map((item, index) => (
-                <span key={index} className="bg-lavender-300 text-darkModeTxt px-2 py-1 rounded text-sm">
-                    {item}
-                </span>
-            ))}
-        </div>
-    </div>
-);
+
 
 export default Projects;

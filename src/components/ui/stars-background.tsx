@@ -65,6 +65,7 @@ export const StarsBackground: React.FC<StarBackgroundProps> = ({
         ]
     );
 
+
     useEffect(() => {
         const updateStars = () => {
             if (canvasRef.current) {
@@ -88,6 +89,7 @@ export const StarsBackground: React.FC<StarBackgroundProps> = ({
 
         return () => {
             if (canvasRef.current) {
+                // eslint-disable-next-line react-hooks/exhaustive-deps
                 resizeObserver.unobserve(canvasRef.current);
             }
         };

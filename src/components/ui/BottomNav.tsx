@@ -1,5 +1,4 @@
 import React from 'react';
-import { FiDownload } from 'react-icons/fi';
 
 interface NavItem {
     href: string;

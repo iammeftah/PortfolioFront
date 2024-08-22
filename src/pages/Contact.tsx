@@ -57,7 +57,7 @@ const Contact: React.FC = () => {
 
         try {
             setIsLoading(true);
-            const response = await fetch('http://localhost:8080/api/contact/save', {
+            const response = await fetch('https://portfolioback-5.onrender.com/api/contact/save', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
