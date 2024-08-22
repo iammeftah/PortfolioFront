@@ -11,7 +11,7 @@ export function ShootingStarsAndStarsBackgroundDemo() {
 
     const handleDownloadResume = async () => {
         try {
-            const response: AxiosResponse<Blob> = await axios.get("https://portfolioback-5.onrender.com/api/download-resume", {
+            const response: AxiosResponse = await axios.get(`${process.env.REACT_APP_API_URL}/api/download-resume`, {
                 responseType: "blob",
             });
 
